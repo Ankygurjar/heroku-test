@@ -4,8 +4,10 @@ const app = express()
 
 const SERVER_PORT:number = 5500
 
-app.get('/', (req :any, res:any)=>{
-    res.status(200).json("Server is good")
+app.use(express.static('client'))
+
+app.get('/', (req:any, res:any)=>{
+    res.sendFile(__dirname + './../client/index.html')
 })
 
 app.listen(SERVER_PORT, ()=>{
