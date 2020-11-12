@@ -1,0 +1,16 @@
+{
+  "name": "new-parse-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && cd jsDocs && node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.14.7",
+    "express": "^4.17.1"
+  }
+}
